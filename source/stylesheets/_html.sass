@@ -1,0 +1,78 @@
+html, body
+  position: relative
+  font-family: "aktiv-grotesk", sans-serif
+  font-size: 18px
+  font-weight: 300
+
+body
+  background-color: black
+  color: white
+
+h1
+  font-size: 100px
+  font-weight: 100
+  margin-bottom: 40px
+  &.smaller
+    font-size: 32px
+    font-weight: 300
+  @media #{$sm}
+    font-size: 86px
+  @media #{$xs}
+    font-size: 66px
+
+h2
+  font-size: 48px
+  font-weight: 100
+  &.smaller
+    margin-top: 65px
+    font-size: 32px
+
+h3
+  font-size: 22px
+  font-weight: 100
+
+h4
+  color: $teal-dark
+  text-transform: uppercase
+  font-size: 14px
+  font-weight: bold
+  small
+    color: $teal-dark
+    font-size: 12px
+    font-weight: normal
+    text-transform: none
+
+a
+  &, &:focus, &:active, &:visited
+    color: $teal
+    text-decoration: none
+    transition: all 0.2s ease-in-out
+  &:hover
+    color: lighten($teal, 10%)
+
+hr
+  height: 1px
+  background-color: rgba(0, 0, 0, 0.1)
+  display: block
+  border: 0px
+  margin: 25px 0px
+
+p
+  font-size: 14px
+  &.size1
+    font-size: 16px
+  &.size2
+    font-size: 18px
+
+ul.arrowed
+  margin: 40px 0px
+  padding: 0px
+  li
+    list-style: none
+    background: transparent image_path('/icons/arrow-right.png') top 4px left no-repeat
+    background-size: 22px 18px
+    padding-left: 40px
+    margin-bottom: 15px
+    font-size: 18px
+    &.hide-arrow
+      background: none

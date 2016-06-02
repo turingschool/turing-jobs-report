@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html prefix="og:http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Report | Turing School of Software & Design</title>
+
+    <script src="https://use.typekit.net/oxa2phf.js"></script>
+    <script>try {
+        Typekit.load({async: true});
+    } catch (e) {
+    }</script>
+
+    <%= stylesheet_link_tag "http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" %>
+    <%= stylesheet_link_tag "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" %>
+    <%= stylesheet_link_tag "/vendor/jquery-circliful/css/jquery.circliful.css" %>
+    <%= stylesheet_link_tag "application" %>
+
+    <%= javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" %>
+    <%= javascript_include_tag "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" %>
+    <%= javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js" %>
+    <%= javascript_include_tag "/vendor/jquery-circliful/js/jquery.circliful.min.js" %>
+    <%= javascript_include_tag "/vendor/jquery.countTo.js" %>
+    <%= javascript_include_tag "application" %>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<nav class="nav--primary">
+    <% image_tag "logo-symbol.png" %>
+    <ul>
+        <li><a href="#completion-rates" class="scroll">Completion Rates</a></li>
+        <li><a href="#academic-success" class="scroll">Academic Success</a></li>
+        <li><a href="#non-graduates" class="scroll">Non Graduates</a></li>
+        <li><a href="#demographic" class="scroll">Demo Disaggregation</a></li>
+        <li><a href="#job-placement" class="scroll">Job Placement</a></li>
+        <li><a href="#tuition" class="scroll">Tuition</a></li>
+        <li><a href="#conclusions" class="scroll">Conclusions</a></li>
+        <!-- <li><a href="#">Download Data</a></li>
+        <li><a href="#">Download as PDF</a></li> -->
+        <li><a href="https://www.turing.io/contact" target="_blank">Contact Us</a></li>
+    </ul>
+</nav>
+
+<section class="header">
+    <div class="container">
+        <div class="logo">
+            <%= image_tag "logo-symbol.png" %>
+        </div>
+        <p class="text-center content-padded size2">
+            The Turing School of Software & Design is a 501(c)3 non-profit school located in Denver, Colorado. Our mission is to unlock human potential by training a diverse, inclusive student body to succeed in high-fulfillment technical careers. We believe in a world powered by technology where the people building it represent the people using it.
+        </p>
+    </div>
+    <div class="tron">
+    </div>
+</section>
+<section class="header-headline">
+    <div class="container">
+        <div class="arrow-down">
+            <%= image_tag "arrow-down.png" %>
+        </div>
+        <div class="headline">
+            <h1>2015 <br/>Programs</h1>
+            <p class="content-padded-right">Turing began in June 2014. We launched with just one course of study: "Web Application Development with Ruby, Rails, and JavaScript." Our students are grouped into cohorts and the course divided into four six-week "modules" each separated by an intermission week. We begin a new cohort every seven weeks and, after the initial rampup months, run four cohorts simultaneously. The typical student is at Turing for a total of 27 weeks and our total student body numbers about 90 when classes are in session.</p>
+        </div>
+    </div>
+</section>
+<section id="completion-rates" class="teal-bg completion-rates">
+    <div class="container">
+        <h1>Completion<br/>Rates</h1>
+        <div class="data">
+            <div class="section">
+                <h4>Total students who could have graduated</h4>
+                <div class="row">
+                    <div class="col-xs-7">
+                        <h2>136</h2>
+                    </div>
+                    <div class="col-xs-5">
+                        <%= image_tag "icons/3people.png" %>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h4>Number of students that are still enrolled
+                    <small>(due to repeated modules/breaks)</small>
+                </h4>
+                <div class="row">
+                    <div class="col-xs-7">
+                        <h2>4</h2>
+                    </div>
+                    <div class="col-xs-5">
+                        <%= image_tag "icons/4people.png" %>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h4>Number of students no longer enrolled</h4>
+                <div class="row">
+                    <div class="col-xs-7">
+                        <h2>132</h2>
+                    </div>
+                    <div class="col-xs-5">
+                        <%= image_tag "icons/minus2people.png" %>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h4>Number of graduates (strict)</h4>
+                <div class="row">
+                    <div class="col-xs-7">
+                        <h2>101</h2>
+                    </div>
+                    <div class="col-xs-5">
+                        <h2 class="countTo" data-from="0" data-to="76" data-append="%">0%</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h4>Number of satisfactory outcomes
+                    <small>(due to repeated modules/breaks)</small>
+                </h4>
+                <div class="row">
+                    <div class="col-xs-7">
+                        <h2>110</h2>
+                    </div>
+                    <div class="col-xs-5">
+                        <h2 class="countTo percent" data-from="0" data-to="83.3" data-decimals="1" data-append="%">0%</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="academic-success" class="academic-success gray-light-bg">
+    <div class="container">
+        <h1>Academic Success</h1>
+        <p class="size1">Each of our four modules is pass/fail. How did graduates do?<br/>Among 94 respondents:</p>
+        <div class="content-padded-right">
+            <div class="row">
+                <div class="col-sm-4 col-xs-6">
+                    <div class="circle-container">
+                        <div class="circliful circliful-gray" data-text="91.5%" data-percent="91.5"></div>
+                        <p>Graduates with no repeats: 86</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <div class="circle-container">
+                        <div class="circliful circliful-gray" data-text="4.3%" data-percent="4.3"></div>
+                        <p>Graduates after repeating one module</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <div class="circle-container">
+                        <div class="circliful circliful-gray" data-text="4.3%" data-percent="4.3"></div>
+                        <p>Graduates after repeating more than on module</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="student-bg">
+
+</section>
+<section id="non-graduates" class="non-graduates gray-light-bg">
+    <div class="container">
+        <h1>Non Graduates</h1>
+        <p class="size1">Why did people not graduate? Of the 29 non-graduates:</p>
+        <div class="content-padded-right2">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="circle-container circle-container-double">
+                        <div class="circliful circliful-gray" data-text="31%" data-percent="31"><span>non grads</span>
+                        </div>
+                        <div class="circliful circliful-gray" data-text="6.8%" data-percent="6.8"><span>students</span>
+                        </div>
+                        <p>Graduates with no repeats: 86</p>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="circle-container circle-container-double">
+                        <div class="circliful circliful-gray" data-text="48.2%" data-percent="48.2">
+                            <span>non grads</span></div>
+                        <div class="circliful circliful-gray" data-text="10.6%" data-percent="10.6">
+                            <span>students</span></div>
+                        <p>Academic drop out: 14</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="circle-container circle-container-double">
+                        <div class="circliful circliful-gray" data-text="13.8%" data-percent="13.8">
+                            <span>non grads</span></div>
+                        <div class="circliful circliful-gray" data-text="3%" data-percent="3"><span>students</span>
+                        </div>
+                        <p>Early drop / bad fit: 4</p>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="circle-container circle-container-double">
+                        <div class="circliful circliful-gray" data-text="6.9%" data-percent="6.9"><span>non grads</span>
+                        </div>
+                        <div class="circliful circliful-gray" data-text="1.5" data-percent="1.5"><span>students</span>
+                        </div>
+                        <p>Elective drop out: 2</p>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <p style="font-size: 12px">
+                <strong>Left before graduation due to employment:</strong> students start job hunting between 3rd and 4th quarters. If their job hunt is immediately successful then they'll sometimes leave before fourth quarter ends or go into "audit" mode. Either way they didn't officially graduate. This is not considered a problem.
+            </p>
+            <p style="font-size: 12px">
+                <strong>Academic drop out:</strong> the biggest bucket is students who left under academic distress. This unfortunately lumps together both students who were not academically successful based on their own aptitude/work and students who had outside circumstances (health, family, finances) impact their learning. Turing is a demanding program and this category should be the main reason people leave. In 2016 I believe we'll see this trend down towards 6-8% of enrollments.
+            </p>
+            <p style="font-size: 12px">
+                <strong>Early drop / bad fit:</strong> A small number of students arrive at Turing and drop out within three weeks, often in the first week. Of the four, three expressed that the workload was too heavy and one expressed that there was too little instruction. This is a category that we can work to eliminate.
+            </p>
+            <p style="font-size: 12px">
+                <strong>Elective drop out:</strong> Students who chose to leave while academically successful. One left to begin an MBA program, one left to begin a job hunt/contracting.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="demographic" class="demographic orange-bg">
+    <div class="container">
+        <h1 class="hidden-xs">Demographic<br/>Disaggregation</h1>
+        <h2 class="smaller visible-xs">Demographic<br/>Disaggregation</h2>
+        <p class="size1">Each category is broken down by total students and graduates</p>
+
+        <div class="content-padded-right2">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="circle-container circle-container-double">
+                        <h3>Women</h3>
+                        <div class="circliful circliful-orange" data-text="31%" data-percent="31"><span>enrollees</span>
+                        </div>
+                        <div class="circliful circliful-orange" data-text="6.8%" data-percent="6.8">
+                            <span>graduated</span>
+                        </div>
+                        <p>Graduates with no repeats: 86</p>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="circle-container circle-container-double">
+                        <h3>Non White</h3>
+                        <div class="circliful circliful-orange" data-text="48.2%" data-percent="48.2">
+                            <span>non grads</span></div>
+                        <div class="circliful circliful-orange" data-text="10.6%" data-percent="10.6">
+                            <span>students</span></div>
+                        <p>Academic drop out: 14</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="circle-container circle-container-double">
+                        <h3>Military Vets</h3>
+                        <div class="circliful circliful-orange" data-text="13.8%" data-percent="13.8">
+                            <span>enrollees</span></div>
+                        <div class="circliful circliful-orange" data-text="3%" data-percent="3"><span>graduated</span>
+                        </div>
+                        <p>Early drop / bad fit: 4</p>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="circle-container circle-container-double">
+                        <h3>Students w/o 4 Year Degree</h3>
+                        <div class="circliful circliful-orange" data-text="6.9%" data-percent="6.9">
+                            <span>enrollees</span>
+                        </div>
+                        <div class="circliful circliful-orange" data-text="1.5" data-percent="1.5">
+                            <span>graduated</span>
+                        </div>
+                        <p>Elective drop out: 2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="job-placement" class="teal-bg job-placement">
+    <div class="container">
+        <div class="content-padded-right2">
+            <h1>Job Placement</h1>
+            <p class="size1">"Job Placement" is the most complicated category to accurately measure. For this section we'll consider just the 101 students who graduated in the time period.</p>
+            <h2 class="smaller">NonJob Seeking / Exemptions</h2>
+            <p class="size1" style="margin-bottom: 45px">Anomalies in the process can cause anomalies in the salary and job-hunt-length data. The following graduates have been exempted/removed from the aggregations:</p>
+            <div class="data">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="section">
+                            <h4>1 student left the country for personal reasons
+                                <small>(still found a job)</small>
+                            </h4>
+                            <h2>1</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section">
+                            <h4>1 student is exempt due to lack of a US work visa
+                                <small>(still found a job)</small>
+                            </h4>
+                            <h2>1</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="section">
+                            <h4>1 student is exempt due to a criminal rECORD</h4>
+                            <h2>1</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section">
+                            <h4>1 student temporarily abandoned their job hunt
+                                <small>(still found a job)</small>
+                            </h4>
+                            <h2>1</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="section">
+                            <h4>2 students had tuition refunded after prolonged job hunts
+                                <small>(one now employed as a developer, one has an apprenticeship)</small>
+                            </h4>
+                            <h2>2</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="teal-medium-bg job-hunt">
+    <div class="container">
+        <div class="content-padded-right2">
+            <h2 class="smaller">Job Hunt</h2>
+            <p>Therefore 95 students are tracked below.</p>
+            <div class="data">
+                <div class="section">
+                    <h4>signed before graduation</h4>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h2>23</h2>
+                        </div>
+                        <div class="col-xs-5">
+                            <h2 class="countTo" data-from="0" data-to="24.2" data-append="%" data-decimals="1">0%</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>full-time employment within 30 days</h4>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h2>46</h2>
+                        </div>
+                        <div class="col-xs-5">
+                            <h2 class="countTo" data-from="0" data-to="48.4" data-append="%" data-decimals="1">0%</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>full-time employment within 60 days</h4>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h2>61</h2>
+                        </div>
+                        <div class="col-xs-5">
+                            <h2 class="countTo" data-from="0" data-to="64.2" data-append="%" data-decimals="1">0%</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>full-time employment within 90 days</h4>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h2>80</h2>
+                        </div>
+                        <div class="col-xs-5">
+                            <h2 class="countTo" data-from="0" data-to="84.2" data-append="%" data-decimals="1">0%</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>full-time employment in 90+ days</h4>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h2>94</h2>
+                        </div>
+                        <div class="col-xs-5">
+                            <h2 class="countTo" data-from="0" data-to="95.8" data-append="%" data-decimals="1">0%</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>under 90 days without an offer</h4>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h2>2</h2>
+                        </div>
+                        <div class="col-xs-5">
+                            <h2 class="countTo" data-from="0" data-to="2.1" data-append="%" data-decimals="1">0%</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>over 90 days without an offer</h4>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h2>2</h2>
+                        </div>
+                        <div class="col-xs-5">
+                            <h2 class="countTo" data-from="0" data-to="2.1" data-append="%" data-decimals="1">0%</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="students-working-bg">
+
+</section>
+<section class="teal-medium-bg additional-stats">
+    <div class="container">
+        <div class="content-padded-right2">
+            <p>In addition, 9 students signed a job offer before graduation but did not graduate (and are thus not reflected above). If counted in both the available pool (95+9 = 104) and in the pre-grad jobs, the numbers become:
+            </p>
+            <div class="data">
+                <div class="section">
+                    <h4>signed before graduation</h4>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <h2>32</h2>
+                        </div>
+                        <div class="col-xs-7">
+                            <h2 class="countTo" data-from="0" data-to="30.77" data-append="%" data-decimals="2">0%</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>full-time employment within 30 days</h4>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <h2>55</h2>
+                        </div>
+                        <div class="col-xs-7">
+                            <h2 class="countTo" data-from="0" data-to="52.9" data-append="%" data-decimals="1">0%</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>full-time employment within 60 days</h4>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <h2>70</h2>
+                        </div>
+                        <div class="col-xs-7">
+                            <h2 class="countTo" data-from="0" data-to="67.3" data-append="%" data-decimals="1">0%</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>full-time employment within 90 days</h4>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <h2>89</h2>
+                        </div>
+                        <div class="col-xs-7">
+                            <h2 class="countTo" data-from="0" data-to="85.6" data-append="%" data-decimals="1">0%</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>full-time employment in 90+ days</h4>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <h2>109</h2>
+                        </div>
+                        <div class="col-xs-7">
+                            <h2 class="countTo" data-from="0" data-to="96.1" data-append="%" data-decimals="1">0%</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>under 90 days without an offer</h4>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <h2>2</h2>
+                        </div>
+                        <div class="col-xs-7">
+                            <h2 class="countTo" data-from="0" data-to="1.9" data-append="%" data-decimals="1">0%</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>over 90 days without an offer</h4>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <h2>2</h2>
+                        </div>
+                        <div class="col-xs-7">
+                            <h2 class="countTo" data-from="0" data-to="1.9" data-append="%" data-decimals="1">0%</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="teal-darker-bg salary">
+    <div class="container">
+        <div class="content-padded-right2">
+            <h1>Salary</h1>
+            <div class="data">
+                <div class="section">
+                    <h4>average salary of employed graduates</h4>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h2 class="countTo" data-from="0" data-to="74447" data-prepend="$">0$</h2>
+                        </div>
+                        <div class="col-xs-5">
+                            <%= image_tag "icons/money.png" %>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>average increase of yearly salary compared with previous job</h4>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h2 class="countTo" data-from="0" data-to="33195" data-prepend="$">0$</h2>
+                        </div>
+                        <div class="col-xs-5">
+                            <%= image_tag "icons/graph.png" %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="tuition" class="tuition gray-light-bg">
+    <div class="container">
+        <div class="content-padded-right2">
+            <h1>Tuition</h1>
+            <p class="size1">Our standard Tuition is $17,500. Students who have a recent Macbook Pro can decline the included laptop and pay a reduced tuition of $16,300. Some students get an additional discount based on their referral pipeline or a diversity scholarship.</p>
+            <div class="data">
+                <div class="section">
+                    <h4>All together the average tuition paid by graduates</h4>
+                    <h2>$16,800</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="students-on-computer">
+
+</section>
+<section class="the-real-cost gray-light-bg">
+    <div class="container">
+        <div class="content-padded-right2">
+            <h1 class="smaller">The Real Cost of Turing</h1>
+            <p>We encourage students to calculate the real cost of Turing. For those persons earning under $60,000, the average previous salary is conservatively (high) $45,000. The average job hunt lasts about 2 months. A single person can get by on about $1500/month in Denver. The real cost of Turing is thus:</p>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="circle-container-large">
+                        <div class="circle-the-real-cost">
+                            <div class="center">
+                                <div class="price countTo" data-from="0" data-to="65750" data-prepend="$">$0</div>
+                                <div class="subtitle">Real Cost</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <ul>
+                        <li><strong>Tuition: $17,500</strong></li>
+                        <li><strong>9-months of not working: 45000 * 9/12 = $33750</strong></li>
+                        <li><strong>9-months of cost-of-living: 1500 * 9 = $13,500</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <p>Then what is the timeline to payoff that investment? With an average salary delta of $44,729, those students pay off their investment in 17 months.</p>
+            <p>"Isn't that double-counting cost-of-living?" people have asked? Here's how we're thinking about it: imagine that Turing is a terrible program. After the 27 weeks of class and two months of job hunting you end up right back in your same old job at the same old salary. In that scenario, what would you have lost? That's why the cost-of-living is counted above and the total is $64,750.</p>
+        </div>
+    </div>
+</section>
+<section id="conclusions" class="conclusions orange-bg">
+    <div class="container">
+        <div class="content-padded-right2">
+            <h1>Conclusions</h1>
+            <p class="size1">Overall, for an institution that's less than two years old, we are satisfied with the results. Some of our key takeaways and intentions for the future are:</p>
+            <h2 class="smaller">Diversity</h2>
+            <h3>We must attract, enroll, and graduate more women, people of color, and veterans.</h3>
+            <p>This year we'll build up stronger partnerships with old friends like Girl Develop It and Teach for America. We'll begin new ones with organizations like City Year and Denver Community College. In the summer of 2016 we anticipate approval from the VA to accept Post-9/11 GI Bill funding and thus open the door more widely to our veterans and their spouses/dependents. We'll also add at least two roles to our operations team and put more purposeful marketing and recruiting systems in place to ensure we're building a sustainable pipeline.</p>
+        </div>
+    </div>
+</section>
+<section class="conclusions-grad-rate orange-dark-bg">
+    <div class="container">
+        <div class="content-padded-right2">
+            <h2 class="smaller">Graduation Rate</h2>
+            <h3>We must graduate a higher percentage of students without any sacrifice in academic rigor</h3>
+            <p>Even mixing in those who leave early due to employment, we're looking a graduation rate in the 80s. MIT hovers in the area of 91-93%. Stanford boasts a 94% graduation rate. We can do better.
+            </p>
+            <p>So far in late 2015 / early 2016 we have put in place the following changes:</p>
+            <ul class="arrowed">
+                <li>The "Echo"/"Foxtrot" split for the first three weeks of Module 1, inspired by Harvey Mudd</li>
+                <li>Creation of a Student Support Fellowship, a six-week fellowship for a recent grad where they spend 24 hours per week pairing with our most struggling students
+                </li>
+                <li>Revising our prework content to be more focused, have higher expectations, and be more easily monitored. We've also added volunteer "prework guides" (current and past students) who give one-on-one support to students before they arrive
+                </li>
+                <li>Foster the growth of student interest/support groups like the Joan Clarke Society (for female students), LGBTuring, and newly the Turing Asian American Programmers. Our experience shows a clear correlation between a student's success/happiness and their depth of connection to the student community around them.
+                </li>
+                <li>Revising admissions process to focus more clearly on the Turing mindset: growth, engagement, agency, empathy, and grit.
+                </li>
+                <li>Increase the number of financial lending partners and diversify their offerings, including some who can now lend students funds for their cost-of-living while in the program (lightening stress/dependency on savings/other people)
+                </li>
+                <li>Creation of a Community Affairs Manager role who is now able to keep a pulse on students, steer their growth, and catch warning signs more quickly
+                </li>
+            </ul>
+            <p>With these efforts in place we seek to nearly eliminate the "Early Drop / Bad Fit" category (currently 3%) and reduce the "Academic Drop Out" (currently 10%) so combined they are the outcome for less than 8% of enrollees in 2016.</p>
+        </div>
+    </div>
+</section>
+<section class="turing-bg">
+
+</section>
+<section class="pipelines orange-darker-bg">
+    <div class="container">
+        <div class="content-padded-right2">
+            <h2 class="smaller">Employment Pipelines</h2>
+            <h3>We must help students secure high-satisfaction jobs more quickly.
+            </h3>
+            <p>Though almost all graduates find jobs they're excited about, the process is entirely too stressful for everyone involved. 60% of students accepted their first job offer. We want students to be choosing between three to five job offers, selecting the one that best aligns with their personal goals. In addition, this is our Apollo Moon Challenge:
+
+            </p>
+            <h3>Every graduate of Turing will have a signed employment contract the day they graduate.</h3>
+
+            <ul class="arrowed">
+                <li class="hide-arrow">To do that we will:</li>
+                <li>Creation of a Student Support Fellowship, a six-week fellowship for a recent grad where they spend 24 hours per week pairing with our most struggling students
+                </li>
+                <li>Build up our employment team (email jeff@turing.io if you'd like more information!)
+                </li>
+                <li>Build up our data management tools and processes around the job hunt
+                </li>
+                <li>Better track our alumni and harvest their job hunt information
+                </li>
+                <li>Form sustainable partnerships with outside hiring companies, especially those who can hire X students every Y modules
+                </li>
+                <li>Coordinate with economic development organizations, both within the government and outside it
+                </li>
+                <li>Increase our reach beyond our personal networks through events, writing, sharing, speaking, public relations, and supporting the people and efforts around us
+                </li>
+                <li>Leverage our long-time alumni as they begin to look for their second jobs, using them to open doors for current grads
+                </li>
+                <li>Create a supported apprenticeship program where experienced developers on our staff assist grads in ramping up at their new jobs, thus lowering the risk for employers
+                </li>
+            </ul>
+            <p>Through those efforts we expect to see over 80% of graduates employed within 30 days of graduation in 2016 and reach the moon challenge in 2017.</p>
+        </div>
+    </div>
+</section>
+<section class="thank-you">
+    <div class="container">
+        <h1><%= image_tag "logo-symbol.png" %> Thank You.</h1>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,185 @@
+section
+  &.header
+    .logo
+      margin: 40px 0px
+      img
+        display: block
+        margin: 0 auto
+        width: 100px
+        height: 100px
+    .tron
+      margin-top: 40px
+      height: 391px
+      background: transparent image_path('tron-bg.png') top center no-repeat
+      background-size: 1003px 391px
+    .arrow-down
+      img
+        display: block
+        margin: 0 auto
+        width: 37px
+        height: auto
+    .headline
+      margin-top: 600px
+      margin-bottom: 100px
+
+  &.header-headline
+    padding-top: 60px
+    padding-bottom: 150px
+    background: transparent image_path('black-lines.png') top center repeat-y
+    background-size: 1003px 12px
+    @media #{$xs}
+      background-image: none
+    .arrow-down
+      margin-bottom: 60px
+      img
+        display: block
+        margin: 0 auto
+        width: 40px
+        height: auto
+
+  &.completion-rates
+    padding-top: 60px
+    padding-bottom: 100px
+    background: transparent url("/images/line-end-white.png") top center no-repeat
+    background-size: 1003px 200px
+    @media #{$xs}
+      background-image: none
+  &.academic-success
+    padding-top: 60px
+    padding-bottom: 150px
+    .content-padded-right
+      @media #{$sm}
+        padding-right: 0px
+
+  &.student-bg
+    background: transparent image_path('student-bg.jpg') center center no-repeat
+    background-size: cover
+    height: 472px
+    @media #{$sm}
+      height: 370px
+    @media #{$xs}
+      height: 220px
+
+  &.non-graduates
+    padding-top: 60px
+    padding-bottom: 100px
+
+  &.demographic
+    padding-top: 60px
+    padding-bottom: 100px
+
+  &.job-placement
+    padding-top: 60px
+    padding-bottom: 100px
+  &.job-hunt
+    padding-bottom: 100px
+
+  &.students-working-bg
+    background: transparent image_path('students-working-bg.jpg') top center no-repeat
+    background-size: cover
+    height: 472px
+    @media #{$sm}
+      height: 370px
+    @media #{$xs}
+      height: 220px
+
+  &.additional-stats
+    padding-top: 60px
+    padding-bottom: 100px
+    .data
+      margin-top: 45px
+
+  &.salary
+    padding-top: 60px
+    padding-bottom: 100px
+
+  &.tuition
+    padding-top: 60px
+    padding-bottom: 100px
+    .data
+      margin-top: 45px
+
+  &.students-on-computer
+    background: transparent image_path('student-on-computer-bg.jpg') top center no-repeat
+    background-size: cover
+    height: 472px
+    @media #{$sm}
+      height: 370px
+    @media #{$xs}
+      height: 220px
+
+  &.the-real-cost
+    padding-top: 60px
+    padding-bottom: 100px
+    ul
+      position: relative
+      top: 90px
+      @media #{$xs}, #{$sm}
+        top: 0px
+        margin: 0 auto
+        margin-bottom: 30px
+      li
+        list-style: none
+        position: relative
+        &:before
+          content: ""
+          display: inline-block
+          width: 15px
+          height: 15px
+          border-radius: 10000px
+          top: 5px
+          left: -25px
+          position: absolute
+        &:first-child:before
+          background-color: #666666
+        &:nth-child(2):before
+          background-color: #a6a6a6
+        &:last-child:before
+          background-color: #4d4d4d
+    .circle-the-real-cost
+      display: inline-block
+      margin: 30px 0px
+      background: transparent url("/images/circle-the-real-cost.png") top left no-repeat
+      background-size: 196px 196px
+      width: 196px
+      height: 196px
+      position: relative
+      .center
+        position: absolute
+        left: 0px
+        right: 0px
+        top: 50%
+        transform: translateY(-50%)
+        color: #595959
+        .price
+          font-size: 36px
+          font-weight: 100
+        .subtitle
+          font-size: 14px
+  &.conclusions
+    padding-top: 60px
+    padding-bottom: 100px
+  &.conclusions-grad-rate
+    padding-bottom: 100px
+
+  &.turing-bg
+    background: transparent image_path('turing-bg-yellow.jpg') center center no-repeat
+    background-size: cover
+    height: 472px
+    @media #{$sm}
+      height: 370px
+    @media #{$xs}
+      height: 220px
+
+  &.pipelines
+    padding-bottom: 100px
+  &.thank-you
+    background-color: black
+    padding: 200px 0px
+    h1
+      margin: 0px
+      img
+        width: 90px
+        height: 90px
+        position: relative
+        top: -11px

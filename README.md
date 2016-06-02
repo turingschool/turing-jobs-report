@@ -16,7 +16,7 @@ Install the gems by running:
 bundle Install
 ```
 
-Launch the app by running
+Launch the app by running:
 
 ```
 middleman server

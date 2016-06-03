@@ -10,7 +10,7 @@ section
     .tron
       margin-top: 40px
       height: 391px
-      background: transparent image_path('tron-bg.png') top center no-repeat
+      background: transparent url('/images/tron-bg.png') top center no-repeat
       background-size: 1003px 391px
     .arrow-down
       img
@@ -18,14 +18,11 @@ section
         margin: 0 auto
         width: 37px
         height: auto
-    .headline
-      margin-top: 600px
-      margin-bottom: 100px
 
   &.header-headline
     padding-top: 60px
     padding-bottom: 150px
-    background: transparent image_path('black-lines.png') top center repeat-y
+    background: transparent url('/images/black-lines.png') top center repeat-y
     background-size: 1003px 12px
     @media #{$xs}
       background-image: none
@@ -36,6 +33,8 @@ section
         margin: 0 auto
         width: 40px
         height: auto
+    h1
+      margin-bottom: 50px
 
   &.completion-rates
     padding-top: 60px
@@ -47,12 +46,14 @@ section
   &.academic-success
     padding-top: 60px
     padding-bottom: 150px
+    p.size1
+      margin-bottom: 40px
     .content-padded-right
       @media #{$sm}
         padding-right: 0px
 
   &.student-bg
-    background: transparent image_path('student-bg.jpg') center center no-repeat
+    background: transparent url('/images/student-bg.jpg') center center no-repeat
     background-size: cover
     height: 472px
     @media #{$sm}
@@ -63,19 +64,31 @@ section
   &.non-graduates
     padding-top: 60px
     padding-bottom: 100px
+    p.size1
+      margin-bottom: 40px
 
   &.demographic
     padding-top: 60px
     padding-bottom: 100px
+    p.size1
+      margin-bottom: 40px
 
   &.job-placement
     padding-top: 60px
     padding-bottom: 100px
   &.job-hunt
     padding-bottom: 100px
+    .data
+      margin-top: 40px
+  &.job-type
+    padding-bottom: 150px
+    .data
+      margin-top: 40px
+      h4
+        color: #005d63
 
   &.students-working-bg
-    background: transparent image_path('students-working-bg.jpg') top center no-repeat
+    background: transparent url('/images/students-working-bg.jpg') top center no-repeat
     background-size: cover
     height: 472px
     @media #{$sm}
@@ -90,17 +103,25 @@ section
       margin-top: 45px
 
   &.salary
-    padding-top: 60px
-    padding-bottom: 100px
+    padding-top: 40px
+    padding-bottom: 80px
+    .data
+      margin: 70px 0px
+      h4
+        color: #005d63
 
   &.tuition
     padding-top: 60px
     padding-bottom: 100px
     .data
       margin-top: 45px
+      .section
+        border: 0px
+        h2
+          color: #FFFFFF
 
   &.students-on-computer
-    background: transparent image_path('student-on-computer-bg.jpg') top center no-repeat
+    background: transparent url('/images/student-on-computer-bg.jpg') top center no-repeat
     background-size: cover
     height: 472px
     @media #{$sm}
@@ -121,13 +142,18 @@ section
       li
         list-style: none
         position: relative
+        text-transform: uppercase
+        font-size: 14px
+        line-height: 1em
+        font-weight: bold
+        margin-bottom: 15px
         &:before
           content: ""
           display: inline-block
           width: 15px
           height: 15px
           border-radius: 10000px
-          top: 5px
+          top: 0px
           left: -25px
           position: absolute
         &:first-child:before
@@ -163,7 +189,7 @@ section
     padding-bottom: 100px
 
   &.turing-bg
-    background: transparent image_path('turing-bg-yellow.jpg') center center no-repeat
+    background: transparent url('/images/turing-bg-yellow.jpg') center center no-repeat
     background-size: cover
     height: 472px
     @media #{$sm}

@@ -345,7 +345,7 @@
 <section class="teal-medium-bg job-hunt">
     <div class="container">
         <div class="content-padded-right2">
-            <h2 class="smaller">Job Hunt</h2>
+            <h2 class="smaller">Job Hunt Length</h2>
             <p>Therefore 95 students are tracked below.</p>
             <div class="data">
                 <div class="section">
@@ -519,16 +519,101 @@
         </div>
     </div>
 </section>
-<section class="teal-darker-bg salary">
+
+<section id="job-type" class="teal-mediumer-bg job-type">
     <div class="container">
         <div class="content-padded-right2">
-            <h1>Salary</h1>
+            <h2 class="smaller">Job Type</h1>
+            <p>Of the four students employed by Turing, two are permanent long-term staff and two are in temporary roles while they wait for work visas. All four are responsible for technical instruction and are among the finest developers we've graduated.</p>
+            <p>Of the five employed alumni who did not report job titles, four are known to be in full-time technical roles (1 devops, 3 developers).</p>
+            <div class="data">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section">
+                            <h4>total non-exempt graduates</h4>
+                            <h2>95</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section">
+                            <h4>full-time developers</h4>
+                            <h2>77</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section">
+                            <h4>in time-limited apprenticeships </h4>
+                            <h2>1</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section">
+                            <h4>quality assurance </h4>
+                            <h2>3</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section">
+                            <h4>contractors/self-employed</h4>
+                            <h2>1</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section">
+                            <h4>total of technical roles</h4>
+                            <h2>82</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section">
+                            <h4>employed by Turing</h4>
+                            <h2>4</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section">
+                            <h4>unemployed</h4>
+                            <h2>4</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="section">
+                            <h4>non reporting</h4>
+                            <h2>5</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="teal-darker-bg salary">
+    <div class="container">
+        <div class="content-padded-right">
+            <h2>Salary</h2>
             <div class="data">
                 <div class="section">
                     <h4>average salary of employed graduates</h4>
                     <div class="row">
                         <div class="col-xs-7">
-                            <h2 class="countTo" data-from="0" data-to="74447" data-prepend="$">0$</h2>
+                            <h2 class="countTo" data-from="0" data-to="74447" data-prepend="$" data-type="currency">$0</h2>
                         </div>
                         <div class="col-xs-5">
                             <%= image_tag "icons/money.png" %>
@@ -539,7 +624,7 @@
                     <h4>average increase of yearly salary compared with previous job</h4>
                     <div class="row">
                         <div class="col-xs-7">
-                            <h2 class="countTo" data-from="0" data-to="33195" data-prepend="$">0$</h2>
+                            <h2 class="countTo" data-from="0" data-to="33195" data-prepend="$" data-type="currency">$0</h2>
                         </div>
                         <div class="col-xs-5">
                             <%= image_tag "icons/graph.png" %>
@@ -547,6 +632,7 @@
                     </div>
                 </div>
             </div>
+            <p>In addition, we looked at the salary increase for persons who previously earned less than $60,000/year before attending Turing. There are 64 of those employed graduates and their average salary delta is $44,729.</p>
         </div>
     </div>
 </section>

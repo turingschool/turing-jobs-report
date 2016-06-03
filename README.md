@@ -1,6 +1,6 @@
 # Turing School 2015 Student Outcomes Report
 
-This is an online report for the Turing School student outcome data for 2015. The application is built using [Middleman](https://middlemanapp.com/).
+This is an online report for the Turing School student outcome data for 2015. You can find the production site running at [report.turing.io](http://report.turing.io). The application is built using [Middleman](https://middlemanapp.com/).
 
 ### Installation
 

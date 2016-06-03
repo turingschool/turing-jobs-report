@@ -41,6 +41,13 @@ $(function () {
                                 if ($el.data('prepend')) {
                                     value = $el.data('prepend') + value;
                                 }
+                                if ($el.data('type')) {
+                                    switch ($el.data('type')) {
+                                        case 'currency':
+                                            value = value.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+                                            break;
+                                    }
+                                }
                                 return value;
                             },
                         });

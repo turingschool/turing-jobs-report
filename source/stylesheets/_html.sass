@@ -11,21 +11,26 @@ body
 h1
   font-size: 100px
   font-weight: 100
-  margin-bottom: 40px
+  margin-bottom: 25px
+  line-height: 88px
   &.smaller
     font-size: 32px
     font-weight: 300
   @media #{$sm}
     font-size: 86px
+    line-height: 1em
   @media #{$xs}
     font-size: 66px
+    line-height: 1em
 
 h2
   font-size: 48px
   font-weight: 100
   &.smaller
-    margin-top: 65px
+    margin-top: 80px
     font-size: 32px
+    @media #{$xs}
+      margin-top: 40px
 
 h3
   font-size: 22px
@@ -69,7 +74,7 @@ ul.arrowed
   padding: 0px
   li
     list-style: none
-    background: transparent image_path('/icons/arrow-right.png') top 4px left no-repeat
+    background: transparent url('/images/icons/arrow-right.png') top 4px left no-repeat
     background-size: 22px 18px
     padding-left: 40px
     margin-bottom: 15px

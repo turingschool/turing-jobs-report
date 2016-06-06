@@ -12,6 +12,9 @@ section
       height: 391px
       background: transparent url('/images/tron-bg.png') top center no-repeat
       background-size: 1003px 391px
+      @media #{$xs}
+        background-size: 630px auto
+        height: 300px
     .arrow-down
       img
         display: block
@@ -66,12 +69,39 @@ section
     padding-bottom: 100px
     p.size1
       margin-bottom: 40px
+    @media #{$sm},#{$xs}
+      .circliful.svg-container
+        width: 49%
+        span
+          top: 103px
+          color: #888
+          left: 5px
+    @media #{$sm}
+      .circliful.svg-container span
+        top: 140px
+    @media #{$xs}
+      .circle-container-double
+        margin-bottom: 20px
 
   &.demographic
     padding-top: 60px
     padding-bottom: 100px
     p.size1
       margin-bottom: 40px
+    @media #{$sm},#{$xs}
+      .circliful.svg-container
+        width: 49%
+        span
+          top: 103px
+          color: #888
+          left: 5px
+    @media #{$sm}
+      .circliful.svg-container span
+        top: 140px
+    @media #{$xs}
+      .circle-container-double
+        margin-bottom: 50px
+
 
   &.job-placement
     padding-top: 60px
@@ -209,3 +239,10 @@ section
         height: 90px
         position: relative
         top: -11px
+      @media #{$xs}
+        text-align: center
+        img
+          display: block
+          margin: 0 auto
+          margin-bottom: 20px
+          

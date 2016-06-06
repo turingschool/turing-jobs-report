@@ -649,6 +649,10 @@ section.header .tron {
   height: 391px;
   background: transparent url("/images/tron-bg.png") top center no-repeat;
   background-size: 1003px 391px; }
+  @media screen and (max-width: 767px) {
+    section.header .tron {
+      background-size: 630px auto;
+      height: 300px; } }
 section.header .arrow-down img {
   display: block;
   margin: 0 auto;
@@ -702,11 +706,37 @@ section.non-graduates {
   padding-bottom: 100px; }
   section.non-graduates p.size1 {
     margin-bottom: 40px; }
+  @media screen and (min-width: 768px) and (max-width: 991px), screen and (max-width: 767px) {
+    section.non-graduates .circliful.svg-container {
+      width: 49%; }
+      section.non-graduates .circliful.svg-container span {
+        top: 103px;
+        color: #888;
+        left: 5px; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    section.non-graduates .circliful.svg-container span {
+      top: 140px; } }
+  @media screen and (max-width: 767px) {
+    section.non-graduates .circle-container-double {
+      margin-bottom: 20px; } }
 section.demographic {
   padding-top: 60px;
   padding-bottom: 100px; }
   section.demographic p.size1 {
     margin-bottom: 40px; }
+  @media screen and (min-width: 768px) and (max-width: 991px), screen and (max-width: 767px) {
+    section.demographic .circliful.svg-container {
+      width: 49%; }
+      section.demographic .circliful.svg-container span {
+        top: 103px;
+        color: #888;
+        left: 5px; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    section.demographic .circliful.svg-container span {
+      top: 140px; } }
+  @media screen and (max-width: 767px) {
+    section.demographic .circle-container-double {
+      margin-bottom: 50px; } }
 section.job-placement {
   padding-top: 60px;
   padding-bottom: 100px; }
@@ -842,5 +872,12 @@ section.thank-you {
       height: 90px;
       position: relative;
       top: -11px; }
+    @media screen and (max-width: 767px) {
+      section.thank-you h1 {
+        text-align: center; }
+        section.thank-you h1 img {
+          display: block;
+          margin: 0 auto;
+          margin-bottom: 20px; } }
 
 /*# sourceMappingURL=application.css.map */

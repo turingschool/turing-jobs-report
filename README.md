@@ -13,7 +13,7 @@ git clone git@github.com:turingschool/turing-jobs-report.git
 Install the gems by running:
 
 ```
-bundle Install
+bundle install
 ```
 
 Launch the app by running:

@@ -1,17 +1,44 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html prefix="og:http://ogp.me/ns#">
+
   <head>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
-    <!-- Use title if it's in the page YAML frontmatter -->
     <title>Turing 2015 Outcomes Report</title>
+
+    <meta property="og:url" content="http://report.turing.io/"/>
+    <meta property="og:title" content="Turing School: 2015 Outcomes Report"/>
+    <meta property="og:description" content="Among our 2015 graduates, 98% are employed as software developers at an average starting salary of $75K."/>
+    <meta property="og:site_name" content='Turing School'/>
+    <meta property="og:image" content="http://report.turing.io/images/students-working-bg.jpg"/>
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
+
+    <script src="https://use.typekit.net/oxa2phf.js"></script>
+    <script>try {
+        Typekit.load({async: true});
+    } catch (e) {
+    }</script>
+
+    <%= stylesheet_link_tag "http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" %>
+    <%= stylesheet_link_tag "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" %>
+    <%= stylesheet_link_tag "/vendor/jquery-circliful/css/jquery.circliful.css" %>
+    <%= stylesheet_link_tag "application" %>
+
+    <%= javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" %>
+    <%= javascript_include_tag "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" %>
+    <%= javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js" %>
+    <%= javascript_include_tag "/vendor/jquery-circliful/js/jquery.circliful.min.js" %>
+    <%= javascript_include_tag "/vendor/jquery.countTo.js" %>
+    <%= javascript_include_tag "application" %>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
 
   <body class="<%= page_classes %>">

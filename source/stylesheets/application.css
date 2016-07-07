@@ -828,11 +828,16 @@ section.the-real-cost {
   section.the-real-cost .circle-the-real-cost {
     display: inline-block;
     margin: 30px 0px;
-    background: transparent url("/images/circle-the-real-cost.png") top left no-repeat;
     background-size: 196px 196px;
     width: 196px;
     height: 196px;
     position: relative; }
+    section.the-real-cost .circle-the-real-cost .circliful {
+      position: relative;
+      top: 20px;
+      left: -30px; }
+      section.the-real-cost .circle-the-real-cost .circliful .timer {
+        display: none; }
     section.the-real-cost .circle-the-real-cost .center {
       position: absolute;
       left: 0px;
@@ -842,9 +847,13 @@ section.the-real-cost {
       color: #595959; }
       section.the-real-cost .circle-the-real-cost .center .price {
         font-size: 36px;
-        font-weight: 100; }
+        font-weight: 100;
+        position: relative;
+        top: -132px; }
       section.the-real-cost .circle-the-real-cost .center .subtitle {
-        font-size: 14px; }
+        font-size: 14px;
+        position: relative;
+        top: -132px; }
 section.conclusions {
   padding-top: 60px;
   padding-bottom: 100px; }

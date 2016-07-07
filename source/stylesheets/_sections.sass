@@ -195,11 +195,17 @@ section
     .circle-the-real-cost
       display: inline-block
       margin: 30px 0px
-      background: transparent url("/images/circle-the-real-cost.png") top left no-repeat
       background-size: 196px 196px
       width: 196px
       height: 196px
       position: relative
+      .circliful
+        position: relative
+        top: 20px
+        left: -30px
+        .timer
+          display: none
+
       .center
         position: absolute
         left: 0px
@@ -210,8 +216,12 @@ section
         .price
           font-size: 36px
           font-weight: 100
+          position: relative
+          top: -132px
         .subtitle
           font-size: 14px
+          position: relative
+          top: -132px
   &.conclusions
     padding-top: 60px
     padding-bottom: 100px
@@ -245,4 +255,4 @@ section
           display: block
           margin: 0 auto
           margin-bottom: 20px
-          
+

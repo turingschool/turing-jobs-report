@@ -456,6 +456,7 @@ a, a:focus, a:active, a:visited {
   color: #1dbece;
   text-decoration: none;
   transition: all 0.2s ease-in-out; }
+
 a:hover {
   color: #3bd4e3; }
 
@@ -516,6 +517,7 @@ nav.nav--primary {
 @media screen and (min-width: 1200px) {
   .data {
     width: 600px; } }
+
 .data .section {
   padding-bottom: 5px;
   margin-bottom: 30px;
@@ -531,6 +533,7 @@ nav.nav--primary {
       height: 35px;
       position: relative;
       top: 10px; }
+
 .data .row:last-child .section {
   border-bottom: 0px; }
 
@@ -618,22 +621,29 @@ nav.nav--primary {
 
 section.teal-bg {
   background-color: #1dbece !important; }
+
 section.teal-medium-bg {
   background-color: #1faebd !important; }
+
 section.teal-mediumer-bg {
   background-color: #15919d !important; }
+
 section.teal-darker-bg {
   background-color: #0c828d !important; }
+
 section.gray-light-bg {
   background-color: #cccccc !important; }
   section.gray-light-bg h1, section.gray-light-bg h2, section.gray-light-bg h4 {
     color: #4d4d4d; }
   section.gray-light-bg p, section.gray-light-bg ul {
     color: #666666; }
+
 section.orange-bg {
   background-color: #f9ba1c; }
+
 section.orange-dark-bg {
   background-color: #e5a007; }
+
 section.orange-darker-bg {
   background-color: #ce7b02; }
 
@@ -644,6 +654,7 @@ section.header .logo {
     margin: 0 auto;
     width: 100px;
     height: 100px; }
+
 section.header .tron {
   margin-top: 40px;
   height: 391px;
@@ -653,11 +664,15 @@ section.header .tron {
     section.header .tron {
       background-size: 630px auto;
       height: 300px; } }
-section.header .arrow-down img {
-  display: block;
-  margin: 0 auto;
-  width: 37px;
-  height: auto; }
+
+section.header .arrow-down {
+  margin-top: 45px; }
+  section.header .arrow-down img {
+    display: block;
+    margin: 0 auto;
+    width: 37px;
+    height: auto; }
+
 section.header-headline {
   padding-top: 60px;
   padding-bottom: 150px;
@@ -675,6 +690,7 @@ section.header-headline {
       height: auto; }
   section.header-headline h1 {
     margin-bottom: 50px; }
+
 section.completion-rates {
   padding-top: 60px;
   padding-bottom: 100px;
@@ -683,6 +699,7 @@ section.completion-rates {
   @media screen and (max-width: 767px) {
     section.completion-rates {
       background-image: none; } }
+
 section.academic-success {
   padding-top: 60px;
   padding-bottom: 150px; }
@@ -691,6 +708,7 @@ section.academic-success {
   @media screen and (min-width: 768px) and (max-width: 991px) {
     section.academic-success .content-padded-right {
       padding-right: 0px; } }
+
 section.student-bg {
   background: transparent url("/images/student-bg.jpg") center center no-repeat;
   background-size: cover;
@@ -701,12 +719,15 @@ section.student-bg {
   @media screen and (max-width: 767px) {
     section.student-bg {
       height: 220px; } }
+
 section.non-graduates {
   padding-top: 60px;
   padding-bottom: 100px; }
   section.non-graduates p.size1 {
     margin-bottom: 40px; }
   @media screen and (min-width: 768px) and (max-width: 991px), screen and (max-width: 767px) {
+    section.non-graduates .content-padded-right2 {
+      padding: 0px; }
     section.non-graduates .circliful.svg-container {
       width: 49%; }
       section.non-graduates .circliful.svg-container span {
@@ -719,6 +740,7 @@ section.non-graduates {
   @media screen and (max-width: 767px) {
     section.non-graduates .circle-container-double {
       margin-bottom: 20px; } }
+
 section.demographic {
   padding-top: 60px;
   padding-bottom: 100px; }
@@ -737,19 +759,23 @@ section.demographic {
   @media screen and (max-width: 767px) {
     section.demographic .circle-container-double {
       margin-bottom: 50px; } }
+
 section.job-placement {
   padding-top: 60px;
   padding-bottom: 100px; }
+
 section.job-hunt {
   padding-bottom: 100px; }
   section.job-hunt .data {
     margin-top: 40px; }
+
 section.job-type {
   padding-bottom: 150px; }
   section.job-type .data {
     margin-top: 40px; }
     section.job-type .data h4 {
       color: #005d63; }
+
 section.students-working-bg {
   background: transparent url("/images/students-working-bg.jpg") top center no-repeat;
   background-size: cover;
@@ -760,11 +786,13 @@ section.students-working-bg {
   @media screen and (max-width: 767px) {
     section.students-working-bg {
       height: 220px; } }
+
 section.additional-stats {
   padding-top: 60px;
   padding-bottom: 100px; }
   section.additional-stats .data {
     margin-top: 45px; }
+
 section.salary {
   padding-top: 40px;
   padding-bottom: 80px; }
@@ -772,6 +800,7 @@ section.salary {
     margin: 70px 0px; }
     section.salary .data h4 {
       color: #005d63; }
+
 section.tuition {
   padding-top: 60px;
   padding-bottom: 100px; }
@@ -781,6 +810,7 @@ section.tuition {
       border: 0px; }
       section.tuition .data .section h2 {
         color: #FFFFFF; }
+
 section.students-on-computer {
   background: transparent url("/images/student-on-computer-bg.jpg") top center no-repeat;
   background-size: cover;
@@ -791,6 +821,7 @@ section.students-on-computer {
   @media screen and (max-width: 767px) {
     section.students-on-computer {
       height: 220px; } }
+
 section.the-real-cost {
   padding-top: 60px;
   padding-bottom: 100px; }
@@ -854,11 +885,14 @@ section.the-real-cost {
         font-size: 14px;
         position: relative;
         top: -132px; }
+
 section.conclusions {
   padding-top: 60px;
   padding-bottom: 100px; }
+
 section.conclusions-grad-rate {
   padding-bottom: 100px; }
+
 section.turing-bg {
   background: transparent url("/images/turing-bg-yellow.jpg") center center no-repeat;
   background-size: cover;
@@ -869,8 +903,10 @@ section.turing-bg {
   @media screen and (max-width: 767px) {
     section.turing-bg {
       height: 220px; } }
+
 section.pipelines {
   padding-bottom: 100px; }
+
 section.thank-you {
   background-color: black;
   padding: 200px 0px; }

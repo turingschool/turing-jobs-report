@@ -30,12 +30,12 @@
     </div>
 </section>
 <section class="header-headline">
-    <div class="container">
-        <div class="arrow-down">
-            <%= image_tag "arrow-down.png" %>
-        </div>
+    <div class="container">        
         <div class="headline">
-            <h1>2015 Outcomes</h1>
+            <div class="arrow-down">
+                <a class="scroll" href="#start-section"><%= image_tag "arrow-down.png" %></a>
+            </div>  
+            <h1 id="start-section">2015 Outcomes</h1>
             <p class="content-padded-right">
               In 2015 Turing offered just one course of study: "Web Application Development with Ruby, Rails, and JavaScript." This report includes students who graduated between December 2014 and December 2015, which represent our 1406, 1407, 1409, 1410, 1412, 1502, 1503, and 1505 cohorts.
             </p>
@@ -172,13 +172,13 @@
         </p>
         <div class="content-padded-right2">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <div class="circle-container">
                         <div class="circliful circliful-gray" data-text="31%" data-percent="31"></div>
                         <p>Early Employment</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <div class="circle-container">
                         <div class="circliful circliful-gray" data-text="48%" data-percent="48">
                         </div>
@@ -187,13 +187,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <div class="circle-container">
                         <div class="circliful circliful-gray" data-text="14%" data-percent="14"></div>
                         <p>Bad Fit</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <div class="circle-container">
                         <div class="circliful circliful-gray" data-text="7%" data-percent="7">
                         </div>
@@ -281,7 +281,7 @@
             <p class="size1">
               Starting with the 101 students who graduated in 2015, we have exempted
               five students from the time-to-hire and salary calculations:</p>
-            <ul style="font-size: .9em">
+            <ul class="arrowed" style="font-size: .9em">
               <li>One graduate left the country for personal reasons. They are now employed as a developer.</li>
               <li>One graduate is exempt due to a criminal record, but is working as an apprentice.</li>
               <li>

@@ -165,66 +165,20 @@ section
   &.the-real-cost
     padding-top: 60px
     padding-bottom: 100px
-    ul
-      position: relative
-      top: 90px
-      @media #{$xs}, #{$sm}
-        top: 0px
-        margin: 0 auto
-        margin-bottom: 30px
-      li
-        list-style: none
-        position: relative
-        text-transform: uppercase
-        font-size: 14px
-        line-height: 1em
-        font-weight: bold
-        margin-bottom: 15px
-        &:before
-          content: ""
-          display: inline-block
-          width: 15px
-          height: 15px
-          border-radius: 10000px
-          top: 0px
-          left: -25px
-          position: absolute
-        &:first-child:before
-          background-color: #666666
-        &:nth-child(2):before
-          background-color: #a6a6a6
-        &:last-child:before
-          background-color: #4d4d4d
-    .circle-the-real-cost
-      display: inline-block
-      margin: 30px 0px
-      background-size: 196px 196px
-      width: 196px
-      height: 196px
-      position: relative
-      .circliful
-        position: relative
-        top: 20px
-        left: -30px
-        .timer
-          display: none
-
-      .center
-        position: absolute
-        left: 0px
-        right: 0px
-        top: 50%
-        transform: translateY(-50%)
-        color: #595959
-        .price
-          font-size: 36px
-          font-weight: 100
-          position: relative
-          top: -132px
-        .subtitle
-          font-size: 14px
-          position: relative
-          top: -132px
+    h1.smaller
+      @media #{$lg}
+        margin-bottom: 0px
+        
+    .data
+      margin-top: 50px
+      margin-bottom: 85px
+      .row
+        h2
+          color: white
+        img
+          width: 30px
+          height: auto
+    
   &.conclusions
     padding-top: 60px
     padding-bottom: 100px

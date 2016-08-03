@@ -516,30 +516,44 @@
 <section class="the-real-cost gray-light-bg">
     <div class="container">
         <div class="content-padded-right2">
-            <h1 class="smaller">The Real Cost of Turing</h1>
+            <h1 class="smaller">The Real Cost of Turing</h2>
             <p>
               We encourage students to calculate the real cost of Turing. For instance, a typical incoming student might have earned $45,000 at their previous job. The average job hunt lasts about 3 months. The real cost of Turing is thus:
             </p>
 
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="circle-container-large">
-                        <div class="circle-the-real-cost">
-                            <div class="center">
-                                <div class="circle-container">
-                                    <div class="circliful circliful-gray" data-text="" data-percent="18"></div>
-                                </div>
-                                <div class="price countTo" data-from="0" data-to="54300" data-prepend="$" data-type="currency">$0</div>
-                                <div class="subtitle">Real Cost</div>
-                            </div>
+            <div class="data">
+                <div class="section">
+                    <h4>average tuition</h4>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h2 class="countTo" data-from="0" data-to="16800" data-prepend="$" data-type="currency">$0</h2>
+                        </div>
+                        <div class="col-xs-5">
+                            <%= image_tag "icons/grad-hat.png", style: 'height: 25px;' %>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <ul>
-                        <li><strong>Average Tuition: $16,800</strong></li>
-                        <li><strong>10-months missed salary: $37,500</strong></li>
-                    </ul>
+                <div class="section">
+                    <h4>10-MONTHS MISSED SALARY</h4>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h2 class="countTo" data-from="0" data-to="37500" data-prepend="$" data-type="currency">$0</h2>
+                        </div>
+                        <div class="col-xs-5">
+                            <%= image_tag "icons/deny.png", style: 'height: 25px;' %>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h4>REAL COST</h4>
+                    <div class="row">
+                        <div class="col-xs-7">
+                            <h2 class="countTo" data-from="0" data-to="54300" data-prepend="$" data-type="currency">$0</h2>
+                        </div>
+                        <div class="col-xs-5">
+                            <%= image_tag "icons/money.png" %>
+                        </div>
+                    </div>
                 </div>
             </div>
 

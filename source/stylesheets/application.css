@@ -653,11 +653,13 @@ section.header .tron {
     section.header .tron {
       background-size: 630px auto;
       height: 300px; } }
-section.header .arrow-down img {
-  display: block;
-  margin: 0 auto;
-  width: 37px;
-  height: auto; }
+section.header .arrow-down {
+  margin-top: 45px; }
+  section.header .arrow-down img {
+    display: block;
+    margin: 0 auto;
+    width: 37px;
+    height: auto; }
 section.header-headline {
   padding-top: 60px;
   padding-bottom: 150px;
@@ -707,6 +709,8 @@ section.non-graduates {
   section.non-graduates p.size1 {
     margin-bottom: 40px; }
   @media screen and (min-width: 768px) and (max-width: 991px), screen and (max-width: 767px) {
+    section.non-graduates .content-padded-right2 {
+      padding: 0px; }
     section.non-graduates .circliful.svg-container {
       width: 49%; }
       section.non-graduates .circliful.svg-container span {
@@ -794,66 +798,17 @@ section.students-on-computer {
 section.the-real-cost {
   padding-top: 60px;
   padding-bottom: 100px; }
-  section.the-real-cost ul {
-    position: relative;
-    top: 90px; }
-    @media screen and (max-width: 767px), screen and (min-width: 768px) and (max-width: 991px) {
-      section.the-real-cost ul {
-        top: 0px;
-        margin: 0 auto;
-        margin-bottom: 30px; } }
-    section.the-real-cost ul li {
-      list-style: none;
-      position: relative;
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 1em;
-      font-weight: bold;
-      margin-bottom: 15px; }
-      section.the-real-cost ul li:before {
-        content: "";
-        display: inline-block;
-        width: 15px;
-        height: 15px;
-        border-radius: 10000px;
-        top: 0px;
-        left: -25px;
-        position: absolute; }
-      section.the-real-cost ul li:first-child:before {
-        background-color: #666666; }
-      section.the-real-cost ul li:nth-child(2):before {
-        background-color: #a6a6a6; }
-      section.the-real-cost ul li:last-child:before {
-        background-color: #4d4d4d; }
-  section.the-real-cost .circle-the-real-cost {
-    display: inline-block;
-    margin: 30px 0px;
-    background-size: 196px 196px;
-    width: 196px;
-    height: 196px;
-    position: relative; }
-    section.the-real-cost .circle-the-real-cost .circliful {
-      position: relative;
-      top: 20px;
-      left: -30px; }
-      section.the-real-cost .circle-the-real-cost .circliful .timer {
-        display: none; }
-    section.the-real-cost .circle-the-real-cost .center {
-      position: absolute;
-      left: 0px;
-      right: 0px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #595959; }
-      section.the-real-cost .circle-the-real-cost .center .price {
-        font-size: 36px;
-        font-weight: 100;
-        position: relative;
-        top: -132px; }
-      section.the-real-cost .circle-the-real-cost .center .subtitle {
-        font-size: 14px;
-        position: relative;
-        top: -132px; }
+  @media screen and (min-width: 1200px) {
+    section.the-real-cost h1.smaller {
+      margin-bottom: 0px; } }
+  section.the-real-cost .data {
+    margin-top: 50px;
+    margin-bottom: 85px; }
+    section.the-real-cost .data .row h2 {
+      color: white; }
+    section.the-real-cost .data .row img {
+      width: 30px;
+      height: auto; }
 section.conclusions {
   padding-top: 60px;
   padding-bottom: 100px; }
